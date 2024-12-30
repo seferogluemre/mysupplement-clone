@@ -1,0 +1,888 @@
+*{
+    box-sizing: border-box;
+  }  
+  /* Body */
+  body {
+  margin: 0;
+  font-family: "Roboto", sans-serif !important; 
+  }
+  
+  .discountTop{
+  background-color: #191c21;
+  } 
+  .headerLogo1{
+  width: 100%;
+  }
+  /* Mobile Sidebar */
+  .menu-icon {
+  position: fixed;
+  top: 10px;
+  left: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  z-index: 1001;
+  }
+  
+  .menu-icon div {
+  background-color: #0648ff;
+  height: 3px;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  }
+  
+  .sidebar {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  }
+  .menu-open .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .menu-open .bar2 {
+  opacity: 0;
+  }
+  
+  .menu-open .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .menu-open .sidebar {
+  left: 0;
+  }
+  
+  .accordion-button {
+  padding: 0.8rem 1rem !important; /* Adjust padding to change height */
+  padding-left:4px !important;
+  padding-right: -10px !important;
+  font-size: 0.875rem !important;  /* Adjust font size if necessary */
+  background-color: #f8f9fa; /* Default background color */
+  color: #fffbfb !important; /* Default text color */
+  font-size: medium !important;
+  }
+  
+  .accordion-button.collapsed {
+  background-color: #1a61a8; /* Default background color for collapsed state */
+  color: #000; /* Text color for collapsed state */
+  }
+  
+  .accordion-button:not(.collapsed) {
+  background-color: #107ae4; /* Background color for expanded state */
+  }
+  .accordion-body{
+  background-color: rgba(80, 139, 207, 0.904)
+  }
+  
+  /*TopMain  */
+  .topMain{
+  background-color: #ffffff !important;
+  }
+  
+  /* My Cart Sidebar */
+  .mycartSidebar{
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-top: 60px;
+  transition: right
+   0.3s ease-in-out;
+  z-index: 1000;
+  }
+  .mycartLink{
+  text-decoration: none;
+  }
+  .mycartLink .mycartSidebar{
+  right: 0;
+  }
+  .close-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  }
+  
+  /* Sidebar Two */
+  .mycartSidebarTwo {
+  position: fixed;
+  top: -100%;
+  left: 15%;
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  transition: top 0.5s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  }
+  
+  .mycartSidebarTwo.active {
+  top: 0;
+  }
+  
+  .close-iconTwo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  }
+  
+  .close-icon::before,
+  .close-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  }
+  
+  .close-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .close-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  
+  /* Dropdown  */
+  
+  .mycardIcon{
+  width: 45px!important;
+  cursor: pointer;
+  }
+  
+  .cartImgTwo{
+  width: 50px;
+  position: relative;
+  left: 35%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  }
+  
+  
+  .Meaccount{
+  padding: 7px 3px;
+  border: 1px solid rgb(202, 200, 200);
+  border-radius: 25px;
+  }
+  
+  /* Account Content */
+  /* Genel stil ayarları */
+  .headerContainer {
+  padding: 0;
+  }
+  
+  /* Hesabım kısmı */
+  /* Genel stil ayarları */
+  .headerContainer {
+  padding: 0;
+  }
+  
+  /* Hesabım kısmı */
+  /* Genel stil ayarları */
+  .headerContainer {
+  padding: 0;
+  }
+  
+  /* Hesabım kısmı */
+  .Meaccount {
+  cursor: pointer;
+  position: relative; /* dropdown-content için referans noktası oluşturur */
+  }
+  
+  .Meaccount .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 9000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  }
+  
+  .Meaccount .dropdown-content .dropdown-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  }
+  
+  .Meaccount .dropdown-content .dropdown-button:hover {
+  background-color: #0056b3;
+  }
+  
+  
+  
+  /* Sidebar Drop Css */
+  .sidebar .btn-group {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  }
+  
+  .sidebar .btn-group img {
+  margin-right: auto !important;
+  }
+  
+  .sidebar .btn-group span {
+  margin-left: auto !important;
+  }
+  
+  
+  /* Drop bitişi */
+  
+  /* Sidebar İmages */
+  
+  .sidebar .dropdown-menu {
+  width: 100%;
+  text-align: center;
+  }
+  
+  .SidebarImage{
+     width: 40px !important;
+    height: 27px !important;
+  }
+  
+  
+  /* ----------------- */
+  .button {
+    background: rgb(41, 120, 240);
+    border: 0;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    position: fixed;
+    top: -1%;
+    left: 25px;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+    scale: 0.7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.175s;
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: #2f45a7;
+  }
+  
+  .burger-5 {
+    scale: 1.3;
+    height: 34px;
+  }
+  
+  .burger-5 svg {
+    height: 36px;
+    transform: translate(-1px, -1px);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .burger-5 .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.75;
+    transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .burger-5 .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .is-closed.burger-5 svg {
+    transform: rotate(-45deg) translate(0);
+  }
+  
+  .is-closed.burger-5 svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+ 
+
+
+
+  
+  
+  /* ------------------------------------ */
+  
+  /* Search Input */
+  
+  .searchBox {
+  background: #e7e7e7;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  }
+  
+  .searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+  }
+  
+  .searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+  margin-left: 21px;
+  }
+  
+  .searchButton {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  }
+  
+  .searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: #1a61a8;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  }
+  
+  /* OffCanvas MyCart  CSS */
+  .canvasImg{
+  height: 50px ;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 50%;
+  }
+  .canvasImg h6{
+  margin: 0;
+  }
+  .canvasImg .text-center{
+  margin-top: 16px;
+  }
+  .canvasContentone{
+  margin-bottom: 100px;
+  }
+  .canvasContentTwo{
+  font-style: italic;
+  margin-top: 100px;
+  padding: 150px 50px;
+  }
+  
+  /* Best demons */
+  .bi-star-fill{
+  color: #FFB22C;
+  }
+  .card{
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  
+  .cardDiscount{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #FFB22C;
+  }
+  
+  .cardDiscounts{
+  position: absolute;
+  top: 21px;
+  right: -5px;
+  color: #FFB22C;
+  }
+  
+  .appIcon{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 12px;
+  border-radius: 15%;
+  background-color: #0c7717;
+  color: #f2ecec;
+  }
+  
+  /* İnfo Suplement */
+  .container {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  }
+  
+  .down-icon,
+  .close-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  }
+  
+  /* Footer */
+  .footer{
+    padding-top: 50px;
+    background-color: #000 !important;
+  }
+  .FooterHr{
+    border: 2px solid #38f04a;
+  }
+  
+  .followİcon{
+    border-radius: 25%;
+    color: #39f7ca;
+  }
+  
+  .footerRow{
+    padding: 0px 180px;
+  }
+  .footerRow h5{
+    color: rgb(87, 144, 250);
+  }
+  .footerCol{
+    padding: 15px !important;
+  }
+  
+  .advantages p{
+  margin: 0;
+  }
+  /* ---------------------------------- */
+  
+  
+  .templateSection {
+  width: 65%;
+  height: 530px;
+  display: none;
+  position: absolute;
+  top: 160% !important; 
+  left: 20%;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5eef2;
+  box-shadow: 
+        0 4px 7px rgba(0, 0, 0, 0.12), 
+        0 8px 11px rgba(0, 0, 0, 0.16),
+        0 12px 16px rgba(0, 0, 0, 0.20), 
+        0 14px 22px rgba(0, 0, 0, 0.24);
+  border-radius: 25px;
+  z-index: 1000;
+  }
+  .tempImage {
+  width: 120px;
+  height: 110px;
+  margin: 10px 5px;
+  }
+  .star {
+  color: yellow;
+  font-size: 25px;
+  }
+  .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 25px 5px;
+  }
+  
+  .signUpMain .form{
+    height: 100% !important;
+    width: 50% !important;
+  }
+  
+  .dropdown-content li:hover{
+  color: rgb(80, 80, 227);
+  }
+  
+  /* Mobile Screen */
+  @media screen and (max-width: 576px) {
+    .cartImgTwo{
+      position: relative;
+      left: 8%;
+      width: 40px;
+    }
+    .mobileAccountİcon{
+      position: relative;
+      left: 10%;
+      width: 40px !important;
+      height: 40px !important;
+      margin-bottom: 15px;
+    }
+    .topMain{
+      margin: 3px 12px;
+    }
+    .menu-icon{
+      top: 46px;
+    }
+    .headerLogo1{
+      width: 210px;
+    }
+    .searchInput{
+      width: 250px;
+    }
+    .searchButton{
+      display: none;
+    }
+    .mycardIcon{
+    display: none!important;
+    }
+    .headerButton{
+    display: none!important;
+    }
+    .dropSection{
+      display: none;
+    }
+    .sliderContent{
+      margin-top: 60px !important;
+    }
+    .card{
+      margin-bottom: 35px;
+      margin: 20px auto;
+    }
+    
+    .footerCol p{
+      width: 90%!important;
+    }
+    .footerRow{
+      width: 100%!important;
+      padding: 0px;
+    }
+    .locationP{
+      padding-left: 30px;
+    }
+    .searchBox{
+      margin-top: 5px !important;
+      margin-left: 25px;
+      width: 85%!important;
+    }
+    .Meaccount{
+      display: none;
+    }
+    .topMain{
+      position: sticky !important;
+      top: 0; 
+      z-index: 1000;
+    }
+    .bestDemons .card{
+      width: 14rem;
+    }
+    .mycartSidebar{
+      position: fixed;
+      top: -100%;
+      width: 390px;
+      height: 400px;
+      background-color: rgb(255, 255, 255);
+      padding-top: 60px;
+      transition: top
+       0.3s ease-in-out;
+      z-index: 1000;
+    }
+    .mycartLink{
+      text-decoration: none;
+    }
+    .mycartSidebarTwo {
+      width: 70%;
+      height: 70%;
+    }
+    .allProductButton{
+      width: auto !important;
+    }
+    .productİnspect .col-3{
+      width: 50% !important;
+      margin-bottom: 15px;
+    }
+    .headerLogo1{
+      width: 40% !important;
+    }
+    .signUpMain .form-control{
+      width: 110% !important;
+    }
+    .signUpMain button{
+      width: 100% !important;
+    }
+    .signUpMain ul{
+      margin-top: 55px !important;
+    }
+  }
+  
+  /* Small Screen */
+  @media (min-width:576px) and (max-width:768px){
+  .dropSection{
+    display: none;
+  } 
+  .cartImgTwo{
+    position: relative;
+    left: 20% !important;
+    width: 40px;
+  }
+  .mobileAccountİcon{
+    position: relative;
+    left: 20% !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 15px;
+  }
+  .searchBox{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 95%;
+  }
+  .mycardIcon{
+  display: none!important;
+  }
+  .headerButton{
+  display: none!important;
+  } 
+  .sliderContent{
+  margin-top: 50px;
+  }
+  .headerLogo1{
+    padding: 0px;
+    margin-bottom: 15px;
+    width: 45% !important;
+  }
+  .menu-icon{
+    margin-top: 60px;
+  }
+  .topMain{
+    position: sticky !important;
+    top: 15px !important; 
+    z-index: 1000;
+  }
+  .card{
+    width: 12rem !important;
+    margin: 10px auto;
+  }
+  .mycartSidebarTwo {
+    left: 10%;
+    width: 85%;
+    height: 65%;
+    overflow: hidden;
+  }
+  
+  }
+  /* -----------------------------------!!! */
+  
+  /* Medium Screen */
+  @media (min-width:768px) and (max-width:992px) {
+    .dropSection{
+      display: none;
+    }
+    .cartImgTwo{
+      position: relative;
+      left: 29%;
+      width: 40px;
+    }
+    .searchBox{
+        margin: 10px 90px;
+        width: 200%!important;
+    }
+    .mycardIcon{
+      display: none!important;
+    }
+    .headerButton{
+      display: none!important;
+    }
+    .sliderContent{
+      margin-top: 50px;
+    }
+    
+    .headerLogo1{
+      width: 40%;
+    }
+    .Meaccount{
+      display: none !important;
+    }
+    .topMain{
+      position: sticky;
+      top: 15px;
+      z-index: 1000;
+    }
+    .menu-icon{
+      margin-left: 10px;
+    }
+    .mycartSidebarTwo {
+      left: 5%;
+      width: 90%;
+      height: 50%;
+    }
+    .cartImgTwo{
+      left: 170px !important;
+    }
+    .mobileAccountİcon{
+      position: relative;
+      left: 179px !important;
+      width: 45px !important;
+      height: 45px !important;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* -------------------------------- */
+  @media (min-width:468px) and (max-width:992px){
+    .menu-open{
+      display: block!important;
+    }
+    .Meaccount{
+      display: none !important;
+    }
+    .topMain{
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      margin: 7px 15px !important;
+    }
+    .col4header{
+      display: none !important;
+    }
+    .sidebar{
+      left: -380px;
+      width: 380px;
+    }
+    .searchButton{
+      display: none !important;
+    }
+    .canvasContentTwo{
+      padding: 20px 0px !important;
+    }
+    .cartImgTwo{
+      left: 50px;
+    }
+    .mobileAccountİcon{
+      position: relative;
+      left: 59px;
+      width: 40px !important;
+      height: 40px !important;
+      margin-bottom: 15px;
+    }
+    .footerCol {
+      margin-bottom: 20px;
+    }
+    .signUpMain .form-control{
+      width: 110% !important;
+    }
+    .signUpMain button{
+      width: 100% !important;
+    }
+    .signUpMain ul{
+      margin-top: 55px !important;
+    }
+  }
+  
+  /* plus Media */
+  @media (min-width:992px) and (max-width:2500px){
+  .mycardIcon{
+    width: 30px!important;
+  }
+  .dropdownRow{
+    width: 79%!important;
+  }
+  .headerButton{
+    padding: 6px  !important;
+    margin-bottom: 5px ;
+  }
+  .Meaccount{
+    display: inline-block !important;
+  }
+  .headerContainer{
+    margin: 0px 50px;
+  }
+  .searchBox:hover > .searchButton {
+    background: white;
+    color: #2f3640;
+    margin-left: -5px;
+  }
+  .topMain{
+    position: relative;
+  }
+  .footerCol {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .footerCol:nth-child(5) {
+    order: 1;
+  }
+  .footerCol:last-child {
+    order: 2;
+  }
+  }
+  
+  /* None Screen */
+  @media (max-width:476px){
+  .headerLogo1{
+    width: 55%;
+    margin-left: 30px;
+    margin-bottom: 10px !important;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col4header{
+    display:  none !important;
+  }
+  .sidebar{
+    left: -300px;
+    width: 300px;
+  }
+  .card{
+    width: 9rem !important;
+    margin: 10px auto;
+  }
+  .productCard{
+    width: 300% !important;
+  }
+  .topMain{
+    position: sticky !important;
+    top: 0 !important;
+  }
+  .canvasContentTwo{
+    padding: 70px 0px !important;
+  }
+  .mycartSidebarTwo{
+    width: 100%;
+    left: 3px;
+    height: 80%;
+    z-index: 1000;
+  }
+  .form-check{
+    float: left;
+  }
+
+}

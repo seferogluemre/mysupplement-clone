@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>En İyi Supplementler | My Supplement'de</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <meta content="En İyi Supplementler MySupplementte!" />
+    <script
+      src="https://kit.fontawesome.com/1cf483120b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top nav -->
+    <div class="topMain shadow-lg">
+      <!-- burger Menu -->
+      <div class="frame">
+        <button
+          onclick="this.querySelector('span').classList.toggle('is-closed')"
+          class="button menu-icon d-xl-none mt-md-5 mt-lg-4 d-lg-none"
+          id="menu-icon"
+        >
+          <span class="burger-5">
+            <svg viewBox="0 0 32 32">
+              <path
+                class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+              ></path>
+              <path class="line" d="M7 16 27 16"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <!-- Drop One -->
+        <div class="accordion mt-5" id="accordionExample">
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed show"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+                onclick="proteinTozuPage()"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/protein_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small class="pe-4">Protein Tozu</small>
+              </button>
+            </h2>
+          </div>
+          <!-- Drop Two -->
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                onclick="kiloPageyonlendirme()"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/gainer_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small>Kilo Ve Hacim</small>
+              </button>
+            </h2>
+          </div>
+          <!-- Drop Three -->
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/aminoasit_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small>AminoAsit</small>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+
+          <!-- Drop Five -->
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/energy_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small>Performans</small>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+          <!-- Drop Six -->
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/haftanin_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small>Fırsatlar</small>
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+          <!-- Drop Seven -->
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/zayiflama_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small>Zayıflama</small>
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+          <!-- Drop Eight -->
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/vitamin_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small>Vitaminler</small>
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+          <!-- Drop Nine -->
+          <div class="accordion-item bg-danger-subtle">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+                onclick="contactYonlendirme()"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/iletisim_icon.svg"
+                  class="img-fluid w-25 SidebarImage"
+                  alt=""
+                />
+                <small>İletişim</small>
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-2 discountTop">
+        <div class="text-center">
+          <p class="text-light">Sporcu Kombinasyonları %10 İndirimli!</p>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="mainHeader mt-xl-3">
+        <div class="container headerContainer">
+          <div class="row px-lg-3">
+            <div class="col-lg-3 align-items-center py-lg-1">
+              <img
+                src="https://www.mysupplement.com.tr/image/catalog/my-supplement-logo1.png"
+                class="img-fluid headerLogo1 py-1"
+                alt=""
+              />
+              <img
+                src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/mycart_icn.png"
+                class="img-fluid d-xxl-none d-xl-none d-lg-none cartImgTwo"
+                alt=""
+                id="cartImgTwo"
+              />
+              <img
+                src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/myeccount.png"
+                class="img-fluid d-xxl-none d-xl-none d-lg-none mobileAccountİcon"
+                alt=""
+                onclick="girişFormYönlendirme()"
+              />
+              <!-- Sidebar Two -->
+              <div class="mycartSidebarTwo rounded-4" id="mycartSidebarTwo">
+                <div class="container-fluid canvasContentone">
+                  <div class="close-icon mx-auto" id="close-iconTwo">×</div>
+                  <div class="text-center">
+                    <p>
+                      Hediye<span class="text-primary"> Ücretsiz Kargo </span
+                      >İçin
+                      <span class="text-primary">100.00Tl₺</span>Kaldı!<small
+                        >(Paketler Hariç)</small
+                      >
+                    </p>
+                  </div>
+                  <div class="row p-1">
+                    <!-- İçerik burada olacak -->
+                    <div class="col-3 d-flex flex-column">
+                      <h6>100Tl</h6>
+                      <div class="canvasImg">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="39"
+                          height="39"
+                          fill="currentColor"
+                          class="bi bi-truck mt-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+                          />
+                        </svg>
+                        <div class="text-center mt-3">
+                          <h6>Ücretsiz Kargo</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column">
+                      <h6>1000Tl</h6>
+                      <div class="canvasImg">
+                        <img
+                          src="https://cdn.myikas.com/images/theme-images/b3655ccd-875e-4823-b3cb-a2ada916dcae/image_180.webp"
+                          class="w-50 h-100 img-fluid"
+                          alt=""
+                        />
+                        <div class="text-center">
+                          <h6>Packet Shaker</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column">
+                      <h6>2500Tl</h6>
+                      <div class="canvasImg">
+                        <img
+                          src="https://cdn.myikas.com/images/theme-images/4357adfe-465c-409a-8dea-755fb13935e5/image_180.webp"
+                          alt=""
+                          class="img-fluid w-50 h-100"
+                        />
+                        <div class="text-center">
+                          <h6>Havlu</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column">
+                      <h6>4000Tl</h6>
+                      <div class="canvasImg">
+                        <img
+                          src="https://cdn.myikas.com/images/theme-images/1330dda2-9d8a-46d6-92dd-ccd36bac6fee/image_180.webp"
+                          alt=""
+                          class="img-fluid w-50 h-100"
+                        />
+                        <div class="text-center">
+                          <h6>Çanta</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-body-tertiary canvasContentTwo">
+                  <div class="text-center align-items-center">
+                    <h5>Sepetinizde Ürün bulunmamaktadır.</h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row justify-content-between">
+                    <a href="#" class="d-inline w-75 codeLink"
+                      >Promosyon Kodu Kullan</a
+                    >
+                    <h5 class="d-inline w-25">Toplam 0TL</h5>
+                  </div>
+                  <div class="row">
+                    <button class="btn d-grid btn-primary fw-bold">
+                      Devam Et
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-sm-12 justify-content-center position-relative"
+            >
+              <div class="searchBox shadow-lg">
+                <label
+                  for="search"
+                  class="form-label d-xxl-none d-xl-none d-lg-none"
+                  >Arama:</label
+                >
+                <input class="searchInput" type="text" name="search" />
+                <button class="searchButton" href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 d-sm-none d-md-none d-lg-inline d-xl-inline d-xxl-inline float-start col4header"
+            >
+              <div class="d-inline">
+                <a class="mycartLink" id="mycartLink">
+                  <img
+                    src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/mycart_icn.png"
+                    class="img-fluid mycardIcon"
+                    alt=""
+                  />
+                </a>
+                <!-- Sepetim Sidebar Başlangıç-->
+                <div class="mycartSidebar" id="mycartSidebar">
+                  <div class="container-fluid canvasContentone">
+                    <div class="close-icon mx-auto" id="close-iconOne"></div>
+                    <div class="text-center">
+                      <p>
+                        Hediye<span class="text-primary"> Ücretsiz Kargo </span
+                        >İçin
+                        <span class="text-primary">100.00Tl₺</span>Kaldı!<small
+                          >(Paketler Hariç)</small
+                        >
+                      </p>
+                    </div>
+                    <div class="row p-1">
+                      <div class="col-3 d-flex flex-column">
+                        <h6>100Tl</h6>
+                        <div class="canvasImg">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="39"
+                            height="39"
+                            fill="currentColor"
+                            class="bi bi-truck mt-2"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+                            />
+                          </svg>
+                          <div class="text-center mt-3">
+                            <h6>Ücretsiz Kargo</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 d-flex flex-column">
+                        <h6>1000Tl</h6>
+                        <div class="canvasImg">
+                          <img
+                            src="https://cdn.myikas.com/images/theme-images/b3655ccd-875e-4823-b3cb-a2ada916dcae/image_180.webp"
+                            class="w-50 h-100 img-fluid"
+                            alt=""
+                          />
+                          <div class="text-center">
+                            <h6>Packet Shaker</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 d-flex flex-column">
+                        <h6>2500Tl</h6>
+                        <div class="canvasImg">
+                          <img
+                            src="https://cdn.myikas.com/images/theme-images/4357adfe-465c-409a-8dea-755fb13935e5/image_180.webp"
+                            alt=""
+                            class="img-fluid w-50 h-100"
+                          />
+                          <div class="text-center">
+                            <h6>Havlu</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 d-flex flex-column">
+                        <h6>4000Tl</h6>
+                        <div class="canvasImg">
+                          <img
+                            src="https://cdn.myikas.com/images/theme-images/1330dda2-9d8a-46d6-92dd-ccd36bac6fee/image_180.webp"
+                            alt=""
+                            class="img-fluid w-50 h-100"
+                          />
+                          <div class="text-center">
+                            <h6>Çanta</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="container-fluid bg-body-tertiary canvasContentTwo"
+                  >
+                    <div class="text-center align-items-center">
+                      <h5>Sepetinizde Ürün bulunmamaktadır.</h5>
+                    </div>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="row justify-content-between">
+                      <a href="#" class="d-inline w-75 codeLink"
+                        >Promosyon Kodu Kullan</a
+                      >
+                      <h5 class="d-inline w-25">Toplam 0TL</h5>
+                    </div>
+                    <div class="row">
+                      <button class="btn d-grid btn-primary fw-bold">
+                        Devam Et
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sepetim Sidebar bitişi -->
+              </div>
+              <div
+                class="d-xxl-inline d-xl-inline me-xl-2 d-lg-inline d-sm-none shadow-sm Meaccount position-relative"
+              >
+                <img
+                  src="https://www.mysupplement.com.tr/catalog/view/theme/default/image/myeccount.png"
+                  class="img-fluid mycardIcon ms-2 mb-1"
+                  alt=""
+                />
+                <span class="fw-medium" onclick="girişFormYönlendirme()"
+                  >hesabım<i class="fas fa-arrow-down ms-2"></i
+                ></span>
+                <div class="dropdown-content py-xxl-1 py-lg-1">
+                  <div class="buttonone">
+                    <button
+                      class="btn btn-outline-success w-75 fw-light"
+                      id="signbutton"
+                      onclick="girişFormYönlendirme()"
+                    >
+                      Giriş yap
+                    </button>
+                  </div>
+                  <li
+                    class="text-decoration-none list-unstyled pt-3"
+                    onclick="girişFormYönlendirme()"
+                  >
+                    Şifremi Unuttum
+                  </li>
+                  <li class="text-decoration-none list-unstyled">
+                    Hemen Üye Ol
+                  </li>
+                  <hr class="border-1" />
+                  <li class="text-decoration-none list-unstyled">
+                    Siparişlerim
+                  </li>
+                  <hr class="border-1" />
+                  <div class="links pt-2 d-grid">
+                    <button class="btn btn-outline-primary">
+                      Tüm Detaylar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-inline">
+                <button
+                  class="btn btn-outline-info border-1 rounded-5 headerButton"
+                >
+                  <span class="headerSpan">Kampanyalar</span>
+                </button>
+                <button
+                  class="btn btn-outline-info border-1 rounded-5 headerButton"
+                >
+                  <span class="headerSpan">Kombinasyon</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="templateSection" id="templateSection">
+        <div class="container containerOne" id="containerOne">
+          <div class="best-sellers">
+            <h4 class="ms-4">En Çok Satanlar</h4>
+          </div>
+          <div class="row flex-column">
+            <div class="col-4 d-flex">
+              <img
+                src="https://cdn.myikas.com/images/00b6c111-71dc-4400-932f-8db87e5da64c/b7a1f551-072f-41b1-a0ec-25b981c82a17/1950/wheyproteinbiscuit.webp"
+                class="img-fluid tempImage"
+                alt=""
+              />
+              <div class="product-description">
+                <small>Protein Tozu</small>
+                <small class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</small>
+                <small>1179 Yorum</small>
+              </div>
+            </div>
+
+            <div class="col-4 d-flex">
+              <img
+                src="https://cdn.myikas.com/images/00b6c111-71dc-4400-932f-8db87e5da64c/7a50d4c7-f6df-4f8d-ba00-b4bd4d94aa0c/image_1950.webp"
+                class="img-fluid tempImage"
+                alt=""
+              />
+              <div class="product-description">
+                <small>Mass Gainer</small>
+                <small class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</small>
+                <small>967 Yorum</small>
+              </div>
+            </div>
+
+            <div class="col-4 d-flex">
+              <img
+                src="https://cdn.myikas.com/images/00b6c111-71dc-4400-932f-8db87e5da64c/0b94c28e-7a76-4e64-9117-b823ff379f3f/image_1950.webp"
+                class="img-fluid tempImage"
+                alt=""
+              />
+              <div class="product-description">
+                <small>Pea Protein</small>
+                <small class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</small>
+                <small>1873 Yorum</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container containerTwo">
+          <div class="row">
+            <div class="col-lg-4 flex-column">
+              <ul class="list-unstyled">
+                <h3 class="fw-bold">Protein Tozu</h3>
+                <li class="py-2">Whey Protein</li>
+                <li class="py-2">Whey İzole</li>
+                <li class="py-2">Bezelye proteini</li>
+                <li class="py-2">Yumurta Akı Proteini</li>
+                <li class="py-2">Süt Proteini</li>
+                <li class="py-2">Soya Proteini</li>
+                <li class="py-2">Kolajen Proteini</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Dropdown Section -->
+    <section class="dropSection position-sticky top-0 z-1">
+      <div class="container-fluid bg-dark">
+        <div
+          class="row justify-content-center py-1 dropdownRow mx-auto px-xl-5"
+        >
+          <div class="col-lg-2">
+            <div class="btn-group w-100">
+              <a
+                class="btn btn-outline-dark btn-sm dropdown-toggle text-light fw-medium w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="proteinTozuDrop"
+                onclick="proteinTozuPage()"
+              >
+                Protein Tozu
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="btn-group w-100">
+              <a
+                class="btn btn-outline-dark btn-sm dropdown-toggle text-light fw-medium w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kilo ve Hacim
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="btn-group w-100">
+              <a
+                class="btn btn-outline-dark btn-sm dropdown-toggle text-light fw-medium bcaaDrop w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                AminoAsit Bcaa
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="btn-group w-100">
+              <a
+                class="btn btn-outline-dark btn-sm text-light fw-medium dropdown-toggle w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Zayıflama
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="btn-group w-100">
+              <a
+                class="btn btn-outline-dark btn-sm dropdown-toggle fw-medium text-light powerLink w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Performans Güç
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="btn-group w-100">
+              <a
+                class="btn btn-outline-dark btn-sm dropdown-toggle fw-medium text-light powerLink w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Vitaminler
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container sliderContent">
+      <div class="row">
+        <div class="col-lg-12 col-xxl-12 pt-sm-0 pt-lg-2 pt-xxl-2">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active w-100">
+                <img
+                  src="https://www.mysupplement.com.tr/image/catalog/15-21-temmuz-mobil.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.mysupplement.com.tr/image/catalog/carnitine-mobil.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.mysupplement.com.tr/image/catalog/gummymobile-610x700px.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.mysupplement.com.tr/image/catalog/gummymobile-610x700px.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.mysupplement.com.tr/image/catalog/gainer-mobil.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider-->
+    <aside class="container bestDemons">
+      <div class="container">
+        <div class="text-center pt-5">
+          <h2 class="fs-3 text-decoration-underline fw-bold">
+            En Çok Satanlar
+          </h2>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center mt-5">
+          <div class="col-md-3 col-6 mb-sm-4">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/performans-guc/no-turn-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                class="bi bi-patch-check-fill cardDiscount"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"
+                />
+              </svg>
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">MySupplement PreWorkout N.O Turn 450G</p>
+                <strong>629,00₺ Tl</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-sm-4">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/0-zay%C4%B1flama/mycarnitine-thermopro-1000ml-cilek-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                class="bi bi-patch-check-fill cardDiscount"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"
+                />
+              </svg>
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">Mysupplement L-Carnitine 1000ml</p>
+                <strong>479,00₺ Tl</strong>
+                <button class="btn btn-primary mt-1 sepete-ekle">
+                  Sepete Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-sm-4">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/1-Protein-TOZU/whey_protein_1.8kg-cilek-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                class="bi bi-patch-check-fill cardDiscount"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"
+                />
+              </svg>
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">Mysupplement Whey Protein <br />1656g</p>
+                <strong>1500,00₺ Tl</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-sm-4">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/mysupplement/bcaa560g-elma-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <img src="" alt="" class="img-fluid" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                class="bi bi-patch-check-fill cardDiscounts"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"
+                />
+              </svg>
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">
+                  MySupplement Bcaa Powder <br />
+                  450G
+                </p>
+                <del>629,00₺ Tl</del>
+                <strong>534,00₺ Tl</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Star İmages -->
+    <section class="starImages">
+      <div class="container-fluid">
+        <div class="text-center">
+          <h5 class="fw-bold text-uppercase py-3 text-light">
+            yıldızlar köşesi
+          </h5>
+        </div>
+        <!-- Carousel for mobile -->
+        <div
+          id="starImagesCarousel"
+          class="carousel slide d-lg-none"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/gym-rat-alt-756x756.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/mega-kaps-alt-756x756.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/power-reco-alt-756x756.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/pro-hacim-alt-756x756.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#starImagesCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#starImagesCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Grid for larger screens -->
+        <div class="row d-none d-lg-flex">
+          <div class="col-lg-3">
+            <img
+              src="https://www.mysupplement.com.tr/image/cache/catalog/gym-rat-alt-756x756.png"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3">
+            <img
+              src="https://www.mysupplement.com.tr/image/cache/catalog/mega-kaps-alt-756x756.png"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3">
+            <img
+              src="https://www.mysupplement.com.tr/image/cache/catalog/power-reco-alt-756x756.png"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3">
+            <img
+              src="https://www.mysupplement.com.tr/image/cache/catalog/pro-hacim-alt-756x756.png"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Card -->
+    <aside class="bestDemons">
+      <div class="container">
+        <div class="text-center pt-5">
+          <h2 class="fs-3 text-decoration-underline fw-bold">Öne Çıkanlar</h2>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-3 col-6">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/mysupplement_creamofrice-WHEY_vanilla-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">MySupplement Rice Of Cream 450G</p>
+                <strong>590,00₺ Tl</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/mysupplement-mass50-cikolata-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">Mysupplement Mass Gainer 5000Gß</p>
+                <strong>1390,00₺ Tl</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/1-Protein-TOZU/mysupplement-whey-414g-banana-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">Mysupplement Whey Protein 450G</p>
+                <strong>540,00₺ Tl</strong>
+                <button class="btn btn-primary mt-1 sepete-ekle">
+                  Sepete Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="card border-0">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/Amino-asit/mysupplement-Caffeine-100caps-250x250.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <img src="" alt="" class="img-fluid" />
+
+              <div class="card-body">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </h3>
+                <p class="card-text">MySupplement Caffein Energy 100K</p>
+                <strong>289,00₺ Tl</strong>,
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-2 px-5" />
+    </aside>
+
+    <!-- Product Card -->
+    <section class="productİnspect mt-5">
+      <div class="container py-2ß">
+        <div class="text-center allProductButton">
+          <button class="btn btn-primary d-grid w-25 py-3 mb-2 fw-bold mx-auto">
+            Tüm Ürünleri İncele
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/d4cb18fe-96ff-4228-8266-2feb22f76be6/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/6179afc9-2482-4c6a-82a0-76478cfa420a/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/42c3caa2-be0c-4b28-a4b3-761475e02a90/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/7cc13a6e-99ac-4a56-ac78-fe286a6a3e95/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/470cb36b-20a1-4ea3-bd85-08e349c9d4e1/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/d4cc06ad-e4da-4e28-b2d3-0f1bc2ab3ab8/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/f95b343a-2ed2-4b34-b00d-5e370dfc1c0c/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+          <div class="col-3 col-lg-3 col-sm-6 col-md-3 mb-sm-3ß">
+            <img
+              src="https://cdn.myikas.com/images/theme-images/fc1fac90-9ced-4f1c-a136-0fea5dd6658d/image_1950.webp"
+              alt=""
+              class="img-fluid w-100 productCard"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Post -->
+    <section class="blogSection position-relative">
+      <div class="container">
+        <div class="text-center">
+          <h5>Blog</h5>
+          <hr class="border-2" />
+        </div>
+        <div
+          id="blogCarousel"
+          class="carousel slide d-lg-none"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/acilis-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Biceps Antrenman Programı</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias, rem?
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/adonis-kas%C4%B1-318x207.png"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Adonis nasıl çıkar</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cupiditate, nihil.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/12-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Barbell Curl Hareketi</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, voluptas.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/barfiks-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Barfiks'in Faydaları</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dolores, labore.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/88-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Hip Trust Hareket</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias, rem?
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/aclik-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Kalori Açıgı Nedir?</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cupiditate, nihil.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/kafein-faydalari-nelerdir-2-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Kafein Faydaları</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, voluptas.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/kardiyo-kas-yakar-m%C4%B1-318x207.png"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Kardiyo Kas Yakarmı</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dolores, labore.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/88-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Hip Trust Hareket</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias, rem?
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/aclik-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Kalori Açıgı Nedir?</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cupiditate, nihil.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/kafein-faydalari-nelerdir-2-318x207.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Kafein Faydaları</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, voluptas.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img
+                  src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/kardiyo-kas-yakar-m%C4%B1-318x207.png"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body d-grid">
+                  <h6>Kardiyo Kas Yakarmı</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dolores, labore.
+                  </p>
+                  <button class="btn btn-outline-secondary">
+                    Devamını Oku.....
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diğer carousel-item'lar da burada olacak -->
+        <!-- mobile screen carosel -->
+        <div class="row d-none d-lg-flex">
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/88-318x207.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-grid">
+                <h6>Hip Trust Hareket</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, rem?
+                </p>
+                <button class="btn btn-outline-secondary">
+                  Devamını Oku.....
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/erkek-vitamin-318x207.png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-grid">
+                <h6>Erkekler İçin Vitamin</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Cupiditate, nihil.
+                </p>
+                <button class="btn btn-outline-secondary">
+                  Devamını Oku.....
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/mysupplement-mass-gainer-318x207.png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-grid">
+                <h6>Mass Gainer Ne kadar?</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, voluptas.
+                </p>
+                <button class="btn btn-outline-secondary">
+                  Devamını Oku.....
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="https://www.mysupplement.com.tr/image/cache/catalog/1-Blog/karnitin-318x207.png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-grid">
+                <h6>Hangi Yag Yakıcı</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores, labore.
+                </p>
+                <button class="btn btn-outline-secondary">
+                  Devamını Oku.....
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-none d-lg-flex"></div>
+        <button
+          class="carousel-control-prev custom-control"
+          type="button"
+          data-bs-target="#blogCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next custom-control"
+          type="button"
+          data-bs-target="#blogCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- İnfo Suplement -->
+    <div class="container">
+      <div class="text-center">
+        <h4 class="fs-3">Supplement Hakkında</h4>
+        <p>
+          Supplementler, pek çok sporcunun sağlıklı bir spor rutini elde
+          edebilmesi adına oldukça önemli katkılar olarak görülüyor. Özellikle
+          belirli alanlarda hedefleri bulunan sporcular için, kilo kaybından kas
+          gelişimine
+        </p>
+      </div>
+      <button class="down-icon">⬇️</button>
+      <div class="expandable-content text-center">
+        <!-- İçerik buraya gelecek -->
+        <div class="text-center">
+          <h4 class="fs-4">Supplement Çeşitleri</h4>
+          <p>
+            Sporculara destek olabilecek sayısız farklı supplement
+            bulunmaktadır. Kilo vermeden kas gelişimine kadar pek çok alanda
+            kullanılabilen bu ürünler, sporcuların vazgeçilmezleri arasında
+            gösterilmektedir.
+          </p>
+          <h4 class="fs-4">Protein Tozu</h4>
+          <p>
+            Protein tozları, en popüler supplement çeşitleri arasında ilk sırada
+            yer almaktadır. Özellikle ağırlık kaldıran sporcuların ihtiyaç
+            duyduğu proteini elde edebilmesi adına kullanılan bu ürünler,
+            protein alımını kolaylaştırması nedeniyle sıkça tercih edilmektedir.
+          </p>
+          <h4 class="fs-4">Kilo Hacim Supplementleri</h4>
+          <p>
+            Kilo ve hacim supplementleri, sporcuların ekstra kalori almasını
+            sağlayan, hacim ve kilo kazandırmaya yönelik hazırlanmış
+            takviyelerdir. Mass gainer, karbonhidrat tozu ve buna benzer
+            supplementler bu kategoride yer almaktadir.
+          </p>
+          <h4 class="fs-4">Amino Asit ve BCAA</h4>
+          <p>
+            Amino asit ve BCAA supplementleri, kas gelişiminin desteklenmesi ve
+            spor sırasında performans artışı için kullanılmaktadır. Oldukça
+            etkili ürünler olan bu supplementler sayesinde egzersizlerinizde
+            daha yüksek ağırlıklarla, verimli şekilde çalışabilmek mümkündür.
+          </p>
+          <h4 class="fs-4">Kreatin</h4>
+          <p>
+            Kreatin supplementleri, özellikle kas gelişimi konusunda sporculara
+            katkı sağlayan ürünlerin başında gelmektedir. Monohidrat, kompleks
+            ve buna benzer pek çok kreatin çeşidi bulunmaktadır. <br />Kreatin,
+            performans artışı sağlayan, yaşa bağlı kas erimesini engelleyen ve
+            ATP depolarını dolduran bir supplement olarak bilinmektedir. Doğru
+            ve düzenli kullanımı halinde, kreatin kullanan sporcuların
+            performansında artış görülmektedir.
+          </p>
+          <h4 class="fs-4">Zayıflama ve Yağ Yakım Supplementleri</h4>
+          <p>
+            Zayıflama ve yağ yakımı için kullanılan supplementler, egzersiz
+            sırasında kaslar tarafından tüketilen enerjinin artmasına, böylece
+            daha fazla kalori yakılması ve aynı zamanda spor performansının
+            artmasına destek olmaktadır. <br />CLA, L-carnitine gibi farklı
+            türleri bulunan yağ yakıcı supplementler, kapsül ve sıvı formlarda
+            bulunabilmektedir.
+          </p>
+          <h4 class="fs-4">En İyi Supplementler</h4>
+          <p>
+            Supplementler, pek çok farklı amaç için kullanılabilen, sporcuların
+            vazgeçilmezleri arasında yer almaktadır. Kilo almadan yağ yakımına
+            kadar farklı konularda destek sağlayabilen bu ürünlerin her biri
+            kullanım alanına göre en iyi etkiyi vermektedir.
+            <br />
+            En iyi supplementler, doğru beslenme ve egzersiz programı ile
+            desteklendiği sürece işlevsel olacaktır. Örneğin, protein tozu
+            kullanan bir sporcunun mutlaka günlük protein alımını, vücut
+            ağırlığı ve egzersiz yoğunluğuna bağlı olarak kalori ihtiyacını
+            doğru şekilde belirlemesi gerekmektedir.
+            <br />
+            Hangi supplement kullanılıyor olursa olsun, mutlaka yüksek kaliteli
+            ürünleri tercih etmeniz tavsiye edilmektedir. Doğru içeriğe sahip
+            olan, uzmanlar tarafından üretilen supplementler ile spor
+            performansınızdan en yüksek verimi alabilirsiniz.
+          </p>
+          <h6 class="display-4">
+            MySupplement’te En İyi Sporcu Desteği Sizinle!
+          </h6>
+          <h2>Supplement Hakkında Sık Sorulanlar</h2>
+          <div class="accordion mt-4" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Supplement Nedir?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong
+                    >Supplementler, sporcuların spor performansı için ihtiyaç
+                    duydukları protein, amino asit ve buna benzer katkıları en
+                    iyi şekilde sağlamak adına üretilen özel ürünlerdir.</strong
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Supplement Zararlı Mıdır?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>
+                    Supplementlerin herhangi bir zararı olmadığı bilindiği gibi
+                    spor performansı üzerinde olumlu katkılarıyla ilgili pek çok
+                    araştırma bulunmaktadır.</strong
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  En İyi Supplement Markası Hangisi?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yeni başlayanlardan profesyonellere kadar, herkesin ihtiyaç
+                  duyacağı supplement ürünlerini Mysupplement’te bulabilirsiniz.
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="close-btn">Kapat</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advantages -->
+    <aside class="container-fluid py-1 bg-body-tertiary">
+      <div class="container">
+        <div class="row mt-5">
+          <!-- İcon1 -->
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://www.mysupplement.com.tr/image/altibuyutec1.svg"
+                  alt=""
+                  class="img-fluid w-100 advantagesImg"
+                />
+              </div>
+              <div class="col-9">
+                <h6 class="fw-bold pt-1">%100 Güvenilir</h6>
+                <p>Etiket bilgilerinin %100 doğru olduğunu taahhüt ederiz.</p>
+              </div>
+            </div>
+          </div>
+          <!-- İcon2 -->
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://www.mysupplement.com.tr/image/altimadalya.svg"
+                  alt=""
+                  class="img-fluid w-100 advantagesImg"
+                />
+              </div>
+              <div class="col-9">
+                <h6 class="fw-bold pt-1">En yüksek Kalite!</h6>
+                <p>Etiket bilgilerinin %100 doğru olduğunu taahhüt ederiz.</p>
+              </div>
+            </div>
+          </div>
+          <!-- icon 3 -->
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://www.mysupplement.com.tr/image/altiuretim1.svg"
+                  alt=""
+                  class="img-fluid w-100 advantagesImg"
+                />
+              </div>
+              <div class="col-9">
+                <h6 class="fw-bold pt-1">Üretim</h6>
+                <p>
+                  Üretim kalitesini garanti edebilmek için ürünlerimizi kendi
+                  tesislerimizde üretiyoruz.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- icon4 -->
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://www.mysupplement.com.tr/image/altimesaj.svg"
+                  alt=""
+                  class="img-fluid w-100 advantagesImg"
+                />
+              </div>
+              <div class="col-9">
+                <h6 class="fw-bold pt-1">Ürün Destegi</h6>
+                <p class="m-0">
+                  Aldığın ürünler ile ilgili bize kolayca ulaşabilir ve merak
+                  ettiklerinizi uzman ekibimize sorabilirsiniz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container mb-0 pb-0 text-light">
+        <div class="row py-3 footerRow">
+          <!-- Address Column -->
+          <div class="col-lg-3 col-md-6 col-sm-12 footerCol">
+            <h5>Adres</h5>
+            <hr class="border-2 FooterHr" />
+            <p class="locationP">
+              Kültür Mah. Ahmet Adnan Saygun Cad. Gündeş Sitesi Saray Apartmanı
+              No: 21 J BEŞİKTAŞ/ İSTANBUL Telefon : 0850 755 7884
+            </p>
+          </div>
+
+          <!-- MySupplement Column -->
+          <div class="col-lg-3 col-md-6 col-sm-12 footerCol">
+            <h5>MySupplement</h5>
+            <hr class="border-2 FooterHr" />
+            <ul class="list-unstyled">
+              <li>Ürünlerimiz Nerde Üretiliyor</li>
+              <li onclick="contactYonlendirme()">İletişim</li>
+              <li>Hakkımızda</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <!-- Security Column -->
+          <div class="col-lg-3 col-md-6 col-sm-12 footerCol">
+            <h5>Güvenlik</h5>
+            <hr class="border-2 FooterHr" />
+            <ul class="list-unstyled">
+              <li>Çerez Politikası</li>
+              <li>Üyelik Sözleşmesi</li>
+              <li>Garanti İade İptal</li>
+              <li>Ön Bilgilendirme Formu</li>
+              <li>Müşteri Aydınlatma Metni</li>
+            </ul>
+          </div>
+
+          <!-- Categories Column -->
+          <div class="col-lg-3 col-md-6 col-sm-12 footerCol">
+            <h5>Kategoriler</h5>
+            <hr class="border-2 FooterHr" />
+            <ul class="list-unstyled">
+              <li onclick="proteinTozuPage()">Protein Tozu</li>
+              <li>Kilo Ve hacim</li>
+              <li>AminoAsit Ve Bcaa</li>
+              <li>Kreatin</li>
+              <li>Performans Ve Güç</li>
+              <li>Zayıflama</li>
+              <li>Vitaminker</li>
+            </ul>
+          </div>
+
+          <!-- Follow Us Column -->
+          <div class="col-lg-3 d-none d-lg-block footerCol">
+            <!-- Empty column to push "Follow Us" down on larger screens -->
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 align-items-center justify-content-center footerCol"
+          >
+            <h5>Bizi Takip Edin</h5>
+            <hr class="border-2 FooterHr w-100" />
+            <div class="d-flex justify-content-center">
+              <a
+                href="#"
+                class="me-2"
+                onclick="instagramYonlendirme()"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-facebook followİcon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+              </a>
+              <a href="#" onclick="instagramYonlendirme()" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-instagram followİcon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer Image and Info Column -->
+          <div
+            class="col-lg-12 col-md-12 col-sm-12 footerCol mt-3 px-lg-5 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h5 class="px-2 ms-4">
+              <p>
+                Bu Site <strong>Emre Seferoglu</strong> Tarafından
+                Hazırlanmıştır!
+              </p>
+            </h5>
+            <hr class="border-2 FooterHr w-100" />
+            <div class="text-decoration-none mt-2">
+              <img
+                src="https://www.mysupplement.com.tr/image/odemesistemleri.png"
+                class="img-fluid bg-body-tertiary rounded-2"
+                alt="Fotograf bulunamadı"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Whatsap İcon -->
+    <div>
+      <a
+        href="https://api.whatsapp.com/send/?phone=905336944696&text&type=phone_number&app_absent=0"
+        class="position-fixed appIcon"
+        target="_blank"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="46"
+          height="46"
+          fill="currentColor"
+          class="bi bi-whatsapp whatsapİcon"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- SCRİPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Javascript/script.js"></script>
+  </body>
+</html>
